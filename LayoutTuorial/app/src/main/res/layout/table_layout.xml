@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/open"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/ctrl_o"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_column="2">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/save"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/ctrl_s"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_column="2">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/save_as"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/ctrl_shift_s"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_column="2">
+        </TextView>
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#FF909090">
+    </View>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/x1"
+            android:layout_column="0"
+            android:textSize="15sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/import1"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/x2"
+            android:layout_column="0"
+            android:textSize="15sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/export"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:text="@string/ctrl_e"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_column="2">
+        </TextView>
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#FF909090">
+    </View>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/quit"
+            android:layout_column="1"
+            android:textSize="20sp">
+        </TextView>
+    </TableRow>
+
+</TableLayout>
