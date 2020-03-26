@@ -2,7 +2,7 @@
 
 ## 实验一
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/1.png?raw=true)
 
 #### 代码解释：
 
@@ -230,15 +230,15 @@
 
 > 要将MainActivity.java的SetContentView中的activity_main改为linear_layout。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/2.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/3.png?raw=true)
 
 
 
 ## 实验二
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/4.png?raw=true)
 
 #### 代码解释：
 
@@ -246,13 +246,13 @@
 * ConstraintLayout里直接使用Design是很方便的，也可以直接全部自己编写代码，这会比较复杂一点。但是单纯使用Design是很难达到我们想要的效果的，所以这里我采用Design＋手动修改代码的方式来完成实验。
 * 创建完两个文本框后，点击如图，让系统先自动推断出约束。当然！这个肯定和我们想要的约束是有差别的，所以我们还要手动修改代码。这样做只是为了给元素一个约束而不报错。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/5.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/6.png?raw=true)
 
 * 关于组件的top,bottom,start(left),end(right)如图所示：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/7.png?raw=true)
 
 * RED：RED的start和top与parent约束。
 * ORANGE:ORANGE的start,top及end与parent约束。
@@ -395,19 +395,21 @@
 
 > 要将MainActivity.java的SetContentView中的activity_main改为constraint_layout。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/8.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/9.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/10.png?raw=true)
 
 > 注：因为这里有如图提示，所以多加了android:layout_marginLeft="30dp"和android:layout_marginRight="30dp"。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/11.png?raw=true)
+
+
 
 ## 实验三
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/12.png?raw=true)
 
 #### 代码解释：
 
@@ -568,9 +570,9 @@
 
 > 要将MainActivity.java的SetContentView中的activity_main改为table_layout。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/13.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/14.png?raw=true)
 
 
 
@@ -586,7 +588,7 @@
 * android:orientation="vertical"：布局管理器内组件的排列方式为垂直布局。
 * android:layout_weight="1" **+** android:layout_width="0dp"：填充剩余空间。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/15.png?raw=true)
 
 实验二：
 
@@ -599,15 +601,15 @@
 * android:layout_marginEnd(Right)="30dp"：设置边距。
 * android:layout_marginStart(Left)="30dp"：设置边距。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/16.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/17.png?raw=true)
 
 * app:layout_constraintHorizontal_bias="0.5"：设置组件相对约束的水平偏移量（范围0~1），需同时设置了start和end属性。
 
 * app:layout_constraintVertical_bias="0.5" ：设置组件相对约束的垂直偏移量（范围0~1），需同时设置了top和bottom属性。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/18.png?raw=true)
 
 > 注：layout_constraintHorizontal_bias 、layout_constraintHorizontal_bias 与margin结合使用能更精确的控制组件的位置。
 
@@ -615,11 +617,11 @@
 
 * android:stretchColumns="1"：要拉伸的列的从零开始的索引。（要拉伸哪一列，从0开始）
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/19.png?raw=true)
 
 * android:layout_column="1"：该子项所在的列的索引。（组件在哪一列，从0开始）
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/20.png?raw=true)
 
 * android:gravity="right"：限定它里面的内容要显示在右边。
 
@@ -632,5 +634,5 @@
 </View>
 ```
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/LayoutTuorial/images/21.png?raw=true)
 
