@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 定义一个ListView
+        android:divider="#000"设置分割线颜色
+        android:dividerHeight="2dp"设置分割线宽度
+        ListView条目单击显示颜色可以指定其listSelector属性
+        android:listSelector="#600"
+        -->
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#808080"
+        android:dividerHeight="2dp"
+        android:listSelector="#600"/>
+        <!--android:listSelector="@drawable/color" -->
+
+</LinearLayout>
