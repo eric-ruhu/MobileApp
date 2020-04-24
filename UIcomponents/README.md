@@ -2,13 +2,13 @@
 
 ## 实验一
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/1.png?raw=true)
 
 #### 代码解释：
 
 * drawable目录下：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/2.png?raw=true)
 
 * 放入键、值
 
@@ -16,7 +16,7 @@
 > listitem.put("textview", names[i]);
 > ```
 
-* 
+* 单击某个列表项，该列表项背景会显示设置的颜色
 
 > ```
 > android:listSelector="#600"
@@ -24,15 +24,15 @@
 
 * 使用SimpleAdapter创建ListView：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/3.png?raw=true)
 
 * ListView点击事件的监听实现的代码参考：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/4.png?raw=true)
 
 * Toast显示提示信息框
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/5.png?raw=true)
 
 #### 代码：
 
@@ -91,7 +91,7 @@
 </LinearLayout>
 ```
 
-* Mainactivity.java
+* MainActivity.java
 
 ```
 package com.example.listview;
@@ -147,39 +147,55 @@ public class MainActivity extends AppCompatActivity {
 
 > 点击列表项Toast显示选中的列表项信息。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/6.png?raw=true)
 
 
 
 ## 实验二
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/7.png?raw=true)
 
 #### 代码解释：
 
-* 
+* 与MainActivity里的customView方法相对应，点击按钮则调用该方法
 
+> ```
 > android:onClick="customView"
+> ```
 
-* 
+* 输入的类型是文本
 
+> ```
 > android:inputType="text"
+> ```
 
-* 
+* 设置字体（normal是普通字体，sans是非衬线字体，serif是衬线字体，monospace是等宽字体）
 
+> ```
 > android:typeface="serif"
+> ```
 
-* 
+* 自动选取该组件内的所有的文本内容
 
+> ```
 > android:selectAllOnFocus="true"
+> ```
 
-* 
+* 输入的类型是密码
 
+> ```
 > android:inputType="textPassword"
+> ```
+
+* 视图加载器，将第一个XML变为View加载到第二个父视图中,加载\res\layout\login.xml界面布局文件
+
+> ```
+> LinearLayout loginForm = (LinearLayout) getLayoutInflater().inflate(R.layout.login, null);
+> ```
 
 * 创建AlertDialog的步骤：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/8.png?raw=true)
 
 #### 代码：
 
@@ -315,41 +331,37 @@ public class MainActivity extends AppCompatActivity {
 
 #### 结果：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/9.png?raw=true)
 
 > 点击按钮后显示
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/10.png?raw=true)
 
 > 点击Sign in后文本框显示
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/11.png?raw=true)
 
 > 点击Cancel后文本框显示
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/12.png?raw=true)
 
 
 
 ## 实验三
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/13.png?raw=true)
 
 #### 代码解释：
 
-* 用16进制整数进行id标识
-
-![]()
-
 * 当用户单击MENU键时触发onCreateOptionsMenu方法
 * 选项菜单的菜单项被单击后的onOptionsItemSelected回调方法
-* 视图加载器，将第一个XML变为View加载到第二个父视图中
+* 用16进制整数进行id标识
 
-> LinearLayout loginForm = (LinearLayout)getLayoutInflater().inflate(R.layout.login, null);
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/14.png?raw=true)
 
 * OptionMenu
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/15.png?raw=true)
 
 #### 代码：
 
@@ -373,7 +385,7 @@ public class MainActivity extends AppCompatActivity {
 </LinearLayout>
 ```
 
-* MainActivity.xml
+* MainActivity.java
 
 ```
 package com.example.menu;
@@ -450,74 +462,76 @@ public class MainActivity extends AppCompatActivity {
 
 #### 结果：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/16.png?raw=true)
 
 > 点击菜单
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/17.png?raw=true)
 
 > 点击字体大小
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/18.png?raw=true)
 
 > 选择字体大小—>10号字体
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/19.png?raw=true)
 
 > 选择字体大小—>16号字体
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/20.png?raw=true)
 
 > 选择字体大小—>20号字体
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/21.png?raw=true)
 
 > 点击字体颜色
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/22.png?raw=true)
 
 > 选择字体颜色—>红色
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/23.png?raw=true)
 
 > 选择字体颜色—>黑色
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/24.png?raw=true)
 
 > 选择普通菜单项
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/25.png?raw=true)
 
 
 
 ## 实验四
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/26.png?raw=true)
 
 #### 代码解释：
 
 * drawable目录下：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/27.png?raw=true)
 
 * java.com.example.actionmode目录下：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/28.png?raw=true)
 
 * menu目录下：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/29.png?raw=true)
 
 * main_menu设置menu布局来规定长按后标题栏显示的内容，这里包括删除。
 * Item类，也就是每个选项对应的类。其中bo属性就是用来记录该选项是否被选中，选中值就为true，当初始化是都会传入false，也就是默认不选择。
 
-* 
+* 这个值会使菜单项一直显示在ActionBar上
 
 > ```
 > app:showAsAction="always"
 > ```
 
-* 
+![]()
+
+* 设置分界线及高度
 
 > ```
 > android:divider="#808080"
@@ -545,7 +559,7 @@ public class MainActivity extends AppCompatActivity {
 
 * ContextMenu
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/30.png?raw=true)
 
 #### 代码：
 
@@ -784,35 +798,35 @@ public class MainActivity extends AppCompatActivity {
 
 #### 结果：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/31.png?raw=true)
 
 > 长按列表项并进行选择
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/32.png?raw=true)
 
 
 
 ## 实验未涉及知识点：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/33.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/34.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/35.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/36.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/37.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/38.png?raw=true)
 
 * 普通菜单
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/39.png?raw=true)
 
 * 弹出菜单
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/40.png?raw=true)
 
 
 
