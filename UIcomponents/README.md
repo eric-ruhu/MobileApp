@@ -529,7 +529,7 @@ public class MainActivity extends AppCompatActivity {
 > app:showAsAction="always"
 > ```
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/UIcomponents/images/41.png?raw=true)
 
 * 设置分界线及高度
 
