@@ -1,6 +1,6 @@
 # Intent
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%871.png?raw=true)
 
 总体思路：第一个应用输入URL地址，然后调用我们自己创建的第二个应用Browser进行访问。
 
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
 创建一个Intent，将EditText中获取的文本转换成Uri，设置Intent的动作为Intent.ACTION_VIEW，然后利用该Intent启动Activity。这里Intent的Action设置为VIEW，而Intent的数据传递一个http协议的URI，因此系统会去寻找相关能够浏览网页的应用。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%872.png?raw=true)
 
 
 
@@ -102,11 +102,11 @@ public class MainActivity extends AppCompatActivity {
 
 * 输入一个网址，点击按钮开始浏览网页：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%873.png?raw=true)
 
 * 当点击按钮之后，会弹出如下画面：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%874.png?raw=true)
 
 
 
@@ -220,43 +220,43 @@ public class MainActivity extends AppCompatActivity {
 
 1、AndroidManifest.xml文件的这个部分会报错，但是其实不影响编译和运行。网上搜到的方法是添加这一句**<category android:name="android.intent.category.BROWSABLE“/>**代码，但是加入之后就一直显示不出自己定义的browser,所以这句就不能添加，那个虽然是红线但是不碍事所以不用管。
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%875.png?raw=true)
 
 2、AndroidManifest.xml文件里在这个位置要加上这一句android:usesCleartextTraffic="true"代码（代码及位置如图所示）。要不然选中自己定义的browser网页无法显示（错误如图所示）。
 
 错误：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%876.png?raw=true)
 
 添加的代码：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%877.png?raw=true)
 
 解释：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%878.png?raw=true)
 
 3、AndroidManifest.xml文件里这个位置的值要和editview输入的URL的head相对应，不对应的话也会直接跳转默认浏览器。
 
 * AndroidManifest.xml的这个位置的值
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%879.png?raw=true)
 
 * editview的输入
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8710.png?raw=true)
 
 4、由于Browser没有指定默认启动的Activity**（因为default activity 就是action.MAIN+category.LAUNCHER的组合，可以多写一个intent-filter解决这个问题也可以直接按下面的方法解决。）**，所以当直接运行时会提示找不到默认Activity的错误，修改方式为把Lauch改为Nothing，这样就可以运行了：
 
 提示：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8711.png?raw=true)
 
 修改：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8712.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8713.png?raw=true)
 
 5、AndroidManifest.xml文件里的intent-filter这个部分表明该Activity将能够响应action为VIEW，并且协议是http的Intent。
 
@@ -270,13 +270,13 @@ public class MainActivity extends AppCompatActivity {
 
 * 输入一个网址并点击按钮
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8714.png?raw=true)
 
 * 选择自己定义的浏览器（可以选择只是这一次还是总是为该浏览器）
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8715.png?raw=true)
 
 * 跳转至该网页
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8716.png?raw=true)
 
