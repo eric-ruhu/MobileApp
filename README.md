@@ -8,4 +8,4 @@
 
 **3、**[UI组件](https://github.com/eric-ruhu/MobileApp/tree/master/UIcomponents)
 
-**4、**[Intent]()
+**4、**[Intent](https://github.com/eric-ruhu/MobileApp/tree/master/Intent)
