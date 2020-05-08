@@ -4,11 +4,11 @@
 
 总体思路：第一个应用输入URL地址，然后调用我们自己创建的第二个应用Browser进行访问。
 
-### 应用一
+## 应用一
 
 思路：输入一个网址，点击按钮，将发起浏览网页的行为。（应用一还没写我们自己的Browser所以运行是默认浏览器）
 
-#### 代码
+### 代码
 
 * activity_main.xml
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-#### **Tips**
+### Tips
 
 1、按钮的单击事件代码解释：
 
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-#### 应用一结果
+### 应用一结果
 
 > 当前还只是测试应用一所以目前还是默认的Chrome浏览器
 
@@ -110,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-### 应用二
+## 应用二
 
 思路：新建一个工程使用WebView来加载URL，跳转之后，出现选择项，选择自定义的Browser进行浏览网页。
 
-#### 代码
+### 代码
 
 * activity_main.xml
 
@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-#### **Tips**
+### Tips
 
 1、AndroidManifest.xml文件的这个部分会报错，但是其实不影响编译和运行。网上搜到的方法是添加这一句**<category android:name="android.intent.category.BROWSABLE“/>**代码，但是加入之后就一直显示不出自己定义的browser,所以这句就不能添加，那个虽然是红线但是不碍事所以不用管。
 
@@ -246,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
 
 ![](https://github.com/eric-ruhu/MobileApp/blob/master/Intent/images/%E5%9B%BE%E7%89%8710.png?raw=true)
 
-4、由于Browser没有指定默认启动的Activity**（因为default activity 就是action.MAIN+category.LAUNCHER的组合，可以多写一个intent-filter解决这个问题也可以直接按下面的方法解决。）**，所以当直接运行时会提示找不到默认Activity的错误，修改方式为把Lauch改为Nothing，这样就可以运行了：
+4、由于Browser没有指定默认启动的Activity**(因为default activity 就是action.MAIN+category.LAUNCHER的组合，可以多写一个intent-filter解决这个问题也可以直接按下面的方法解决。)**，所以当直接运行时会提示找不到默认Activity的错误，修改方式为把Lauch改为Nothing，这样就可以运行了：
 
 提示：
 
@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-#### 最终结果
+### 最终结果
 
 > 运行顺序：应用二--->应用一，最终结果是运行完Browser工程再运行IntentDemo工程就会自动出现选择浏览器
 
