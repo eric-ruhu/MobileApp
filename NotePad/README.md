@@ -1,34 +1,37 @@
 # NotePad
 
+## 实验要求
+
+阅读NotePad的源代码并做如下扩展：
+
+* NoteList中显示条目增加时间戳显示
+* 添加笔记查询功能（根据标题查询）
+
+
+
 ## 前期准备
 
 要想让源代码在自己的环境运行，要做以下改动：
 
 * 步骤一：这三个文件替换成之前可以运行的项目的同名文件
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%871.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%872.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%873.png?raw=true)
 
 * 步骤二：删除AndroidMainfest.xml文件中的<uses-sdk android:minSdkVersion="11"/>这句代码
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%874.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%875.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%876.png?raw=true)
 
 这样就可以在自己的环境上成功运行NotePad源代码！！！
 
-## 实验要求
 
-阅读NotePad的源代码并做如下扩展：
-
-* NoteList中显示条目增加时间戳显示
-
-* 添加笔记查询功能（根据标题查询）
 
 ## 应用一——时间戳
 
@@ -158,7 +161,7 @@ int[] viewIDs = { android.R.id.text1 , R.id.text2 };
 
 完成以上全部修改就可以显示时间戳了！运行结果如图所示：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%877.png?raw=true)
 
 
 
@@ -276,8 +279,8 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 完成以上全部修改就可以进行搜索了！运行结果如图所示：
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%878.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%879.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/MobileApp/blob/master/NotePad/images/%E5%9B%BE%E7%89%8710.png?raw=true)
