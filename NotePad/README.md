@@ -81,25 +81,25 @@ Tip1:
 
 查看NotePadProvider.java发现数据库中已经存在时间信息：
 
-> ```
-> @Override
-> public void onCreate(SQLiteDatabase db) {
->     db.execSQL("CREATE TABLE " + NotePad.Notes.TABLE_NAME + " ("
->             + NotePad.Notes._ID + " INTEGER PRIMARY KEY,"
->             + NotePad.Notes.COLUMN_NAME_TITLE + " TEXT,"
->             + NotePad.Notes.COLUMN_NAME_NOTE + " TEXT,"
->             + NotePad.Notes.COLUMN_NAME_CREATE_DATE + " INTEGER,"
->             + NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE + " INTEGER"
->             + ");");
-> }
-> ```
+```
+@Override
+public void onCreate(SQLiteDatabase db) {
+    db.execSQL("CREATE TABLE " + NotePad.Notes.TABLE_NAME + " ("
+            + NotePad.Notes._ID + " INTEGER PRIMARY KEY,"
+            + NotePad.Notes.COLUMN_NAME_TITLE + " TEXT,"
+            + NotePad.Notes.COLUMN_NAME_NOTE + " TEXT,"
+            + NotePad.Notes.COLUMN_NAME_CREATE_DATE + " INTEGER,"
+            + NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE + " INTEGER"
+            + ");");
+}
+```
 
 在NotePadProvider.java里找到了源代码获取时间的代码：
 
-> ```
-> // Gets the current system time in milliseconds
-> Long now = Long.valueOf(System.currentTimeMillis());
-> ```
+```
+// Gets the current system time in milliseconds
+Long now = Long.valueOf(System.currentTimeMillis());
+```
 
 本来是想在NotePadProvider.java中修改获取时间的代码，在NoteEditor.java中updateNote()方法进行引用并将其用ContentValues的put方法存入数据库。
 
@@ -122,8 +122,8 @@ private final void updateNote(String text, String title) {
     // Sets up a map to contain values to be updated in the provider.
     ContentValues values = new ContentValues();
     values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, dateTime);
-								 ...........
-  							(该方法中其他代码无需改变)
+		   ...........
+  	  (该方法中其他代码无需改变)
 }
 ```
 
